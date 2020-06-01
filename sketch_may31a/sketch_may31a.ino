@@ -1,5 +1,5 @@
 struct PinConfig {
-  int led = LED_BUILTIN;
+  byte led = LED_BUILTIN;
 };
 
 class Led {
@@ -29,9 +29,9 @@ class ArduinoBoard {
 
   void HandleInputs() {
     led_->TurnOn();
-    delay(3000);
+    delay(1000);
     led_->TurnOff();
-    delay(3000);
+    delay(1000);
   }
 
  private:
